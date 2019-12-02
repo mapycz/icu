@@ -1,0 +1,11 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@ --parallel
+
+
+configure_flags += --prefix=/opt/szn/icu
+
+override_dh_auto_configure:
+	dh_auto_configure -- $(configure_flags)
+

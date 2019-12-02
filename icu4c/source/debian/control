@@ -1,0 +1,12 @@
+Source: szn-icu
+Maintainer: Jiri Drbalek <jiri.drbalek@firma.seznam.cz>
+Standards-Version: 3.9.6.0
+Section: devel
+Priority: extra
+Build-Depends: debhelper (>= 8), g++,
+    dh-autoreconf,
+
+Package: szn-icu
+Architecture: all
+Depends: ${misc:Depends}
+Description: Packaged upstream ICU library
